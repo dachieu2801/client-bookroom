@@ -123,7 +123,7 @@ function ContentDetail() {
 
     if (fullName.trim() && email.trim() && phoneNumber && cardNumber && room.length > 0 && typePayment) {
       setErr('')
-      const res = await fetch('${URL}transaction', {
+      const res = await fetch(`${URL}transaction`, {
         method: 'POST',
         body: JSON.stringify({
           user: user.username,
