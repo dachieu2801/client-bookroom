@@ -59,7 +59,7 @@ function ContentDetail() {
 
   useEffect(() => {
     async function fetchRoom() {
-      const res = await fetch('${URL}hotel/room', {
+      const res = await fetch(`${URL}hotel/room`, {
         method: 'POST',
         body: JSON.stringify({
           dateStart,

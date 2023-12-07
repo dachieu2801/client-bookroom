@@ -13,6 +13,7 @@ function Login() {
       const res = await fetch(`${URL}transaction/${user.username}`)
 
       const data = await res.json()
+      console.log(data);
       if (data.message === 'Has error') {
       } else {
         setData(data)
